@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    margin: 60px;
+    margin-bottom: 100px;
+    font-size: 80px;
+}
+.cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    height: 460px;
+    border: 1px solid red;
+}
+
+p{
+    font-size: 35px;
+}

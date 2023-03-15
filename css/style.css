@@ -1,26 +1,38 @@
 body{
     width: 100%;
-    height: 70vh;
+    height: 30vh;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(https://img.freepik.com/fotos-premium/concepto-agroindustria-agricultura-tractor-verde-arando-campo-cereal-cielo-nubes_283352-373.jpg?w=2000);
 }
 
 h1{
     font-size: 70px;
     text-align: center;
 }
+
 h2{
-    font-size: 40px;
     text-align: center;
+    margin-bottom: 2px;
 }
+
 li{
     display: inline-block;
     margin-right: 70px;
     list-style: none;
+    font-size: 30px;
 }
 nav{
+    margin-top: 20px;
     display: flex;
     width: 100%;
-    height: 10%;
-    background-color: rgb(94, 102, 102);
+    height: 30%;
+    background-color: rgb(89, 158, 68);
+    opacity: 0.9;
+}
+
+.titulo2{
+    display: flex;
+    margin: auto;
+    width: 30%;
 }

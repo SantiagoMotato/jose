@@ -1,0 +1,25 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(249, 253, 255);
+}
+
+h1{
+    text-align: center;
+    margin: 60px;
+    margin-bottom: 80px;
+    font-size: 80px;
+   
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    height: 520px;
+    border: 1px solid rgb(148, 118, 118);
+}
+p{
+    font-size: 24px;
+}

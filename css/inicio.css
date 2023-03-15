@@ -1,19 +1,24 @@
+body{
+    background-position: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/163/618/non_2x/soft-colorful-background-with-gradient-pastel-color-palette-illustration-for-banner-presentation-template-wallpaper-text-place-and-social-media-illustration-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 h1{
     text-align: center;
-    margin: 60px;
-    margin-bottom: 100px;
     font-size: 80px;
 }
 .cuadro{
+    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 60%;
-    height: 460px;
-    border: 1px solid red;
+    width: 75%;
+    height: 350px;
+    border: 1px solid rgb(148, 118, 118);
 }
 
 p{
-    font-size: 35px;
+    font-size: 24px;
 }

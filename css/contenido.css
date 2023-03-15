@@ -4,7 +4,21 @@ h1{
     margin-bottom: 100px;
     font-size: 80px;
 }
-.cuadro{
+h2{
+    margin-left: 50px;
+}
+h3{
+    margin: 50px;
+    margin-bottom: 80px;
+}
+
+p{
+    font-size: 20px;
+}
+div{
+    margin: 70px;
+}
+/*.cuadro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,4 +26,15 @@ h1{
     width: 60%;
     height: 460px;
     border: 1px solid red;
+}*/
+
+.costo{
+    margin: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.licencias{
+    margin: 100px;
+    margin-bottom: 50px;
+    text-align: center;
 }

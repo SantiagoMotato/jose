@@ -1,0 +1,57 @@
+body{
+    margin-left: 30px;
+    background-image: url(https://www.immotokens.be/wp-content/uploads/2022/02/Supermarkt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 100px;
+}
+h3{
+    font-size: 50px;
+}
+
+.traits{
+    background-color: rgba(247, 234, 225, 0.5);
+    width: 45%;
+    color: brown;
+}
+.inventory{
+    background-color: rgba(247, 226, 112, 0.5);
+    width: 45%;
+}
+.sale{
+    background-color: rgba(236, 170, 170, 0.5);
+    width: 45%;
+}
+.code-reader{
+    background-color: rgba(70, 190, 150, 0.5);
+    width: 45%  ;
+}
+input{
+    background-color:antiquewhite;
+}
+button{
+    background-color: rgb(216, 37, 37);
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+}
+button:hover{
+    background-color: rgb(194, 115, 115);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-top: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+

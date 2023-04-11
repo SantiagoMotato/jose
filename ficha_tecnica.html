@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Supermarket</title>
+</head>
+<body>
+    
+    <h1>FORMATO DE FICHA TECNICA</h1>
+
+    <div class="traits">
+        <h3>Caracteristicas del producto</h3>
+        <p>
+            <label for="nombre">
+                <b>Nombre del producto</b>
+                <input type="text" id="nombre" placeholder="Nombre del producto" required>
+            </label>
+        </p>
+        <p>
+            <label for="linea">
+                <b>Linea de produccion</b>
+                <input type="text" id="linea" placeholder="Linea de produccion" required>
+            </label>
+        </p>
+        <p>
+            <label for="cantidad">
+                <b>Cantidad</b>
+                <input type="number" id="cantidad" placeholder="Cantidad">
+            </label>
+        </p>
+        <p>
+            <label for="valor">
+                <b>Valor</b>
+                <input type="number" id="valor" placeholder="Valor">
+            </label>
+        </p>
+        <label for="cobro">
+            <b>Cuenta de cobro</b>
+            <input type="text" id="cobro" placeholder="Cuenta de cobro" required>
+        </label>
+
+      
+    </div>
+
+
+    <div class="inventory">
+        <h3>Inventario de productos</h3>
+        <p>
+            <label for="inventario">
+                <b>Nombre del computadore/s</b>
+                <input type="text" id="inventario" placeholder="Nombre del producto" required>
+            </label>
+        </p>
+        <p id="invenProductos"></p>
+    </div>
+
+    <div class="sale">
+        <h3>Factura de venta</h3>
+        <p>
+            <label for="Impresora">
+                <b>Impresora/s</b>
+                <input type="text" id="impresora" placeholder="Nombre del producto" required>
+            </label>
+        </p>
+    </div>
+
+    <div class="code-reader">
+        <h3>Lector de codigo de barras</h3>
+        <p>
+            <label for="lector">
+                <b>Lector de codigo</b>
+                <input type="text" id="lector" placeholder="Nombre del producto" required>
+            </label>
+        </p>
+        
+    </div>
+
+    <p id="nombrep"></p>
+    <p id="lineapro"></p>
+    <p id="cantidadpro"></p>
+    <p id="total"></p>
+    <p id="cuentCobro"></p>
+    <p id="inventarioPro"></p>
+    <p id="marcaImpresora"></p>
+    <p id="lectorCodigo"></p>
+    <p id="impresora"></p>
+
+<button onclick="verFicha()">Enviar ficha técnica</button>
+
+</body>
+</html>

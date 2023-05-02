@@ -1,45 +1,97 @@
-body{
+/* body{
     width: 100%;
     height: 30vh;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(https://img.freepik.com/fotos-premium/concepto-agroindustria-agricultura-tractor-verde-arando-campo-cereal-cielo-nubes_283352-373.jpg?w=2000);
-}
+} */
 
-h1{
-    font-size: 70px;
+*{
+    font-family: "iron man";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display:flex;
+}
+.info{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    background-image: linear-gradient(
+        rgba(0,0,0,.8),
+        rgba(0,0,0,.8)),  url(https://th.bing.com/th/id/OIP.tQ_GvoKBYTqOiNI7SEqFKgAAAA?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: center;
+}
+.Title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    position: relative;
+    margin: 10px;
+    top: -50px;
+}
+p{
     font-family: Arial, Helvetica, sans-serif;
 }
-
-h2{
-    text-align: center;
-    margin-bottom: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+.Introduccion{
+    margin-top: 30px;
 }
-
-li{
-    display: inline-block;
-    margin: 15px;
-    margin-right: 70px;
+a{
     list-style: none;
-    font-size: 30px;
-}
-ul li a{
     text-decoration: none;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: aliceblue;
 }
-nav{
-    margin-top: 20px;
-    display: flex;
+li {
+    margin-bottom: 15px;
+}
+.front-page{
     width: 100%;
-    height: 100%;
-    background-color: rgb(89, 158, 68);
-    opacity: 0.9;
-}
-
-.titulo2{
     display: flex;
-    margin: auto;
-    width: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7)),  url(https://img.freepik.com/fotos-premium/concepto-agroindustria-agricultura-tractor-verde-arando-campo-cereal-cielo-nubes_283352-373.jpg?w=2000);
+    background-size: cover;
+    background-position: center;
+}
+.front-page-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color:aliceblue;
+    position: relative;
+    top: -99px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:aliceblue;
+    position: relative;
+    top: -80px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    margin-bottom: 30px;
+    color:aliceblue;
+    position: relative;
+    top: 0px;
+}
+.memberNames{
+    font-size: 20px;
+    margin-bottom: 6px;
+    color:aliceblue;
+    position: relative;
+    top: -0px;
 }

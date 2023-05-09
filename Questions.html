@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Questions.css">
+    <script src="js/Questions.js"></script>
+    <title>Formulario de preguntas</title>
+</head>
+<body>
+    
+    <div class="title">
+    <h1>Preguntas de selección múltiple</h1>
+    </div>
+
+    <h2>¿Qué es programación estructurada?</h2>
+    <h2>¿Qué es Java?</h2>
+    <h2>¿Qué es MaríaDB?</h2>
+
+    <div id="resultado">
+
+        <div class="resultado"></div>
+
+        <form name="quizForm" onsubmit="return verificarRespuestas()">
+
+            <div class="question">
+                <h3>¿Qué es programación estructurada?</h3>
+                    <input type="radio" id="answer-1"  name="ans-1" value="respuesta-1" checked="checked">Es el proceso de crear un conjunto de instrucciones que le dicen a una computadora como realizar algún tipo de tarea.<br>
+                    <input type="radio" id="answer-11" name="ans-1" value="respuesta-12" checked="checked"> La prograEstructEs un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora.<br>
+                    <input type="radio" id="answer-1"  name="ans-1" value="respuesta-3" checked="checked"> Son las partes físicas, tangibles, de un sistema informático, sus componentes eléctricos, electrónicos y electromecánicos.<br>
+            </div>
+
+            <div class="question">
+                <h3>¿Qué es Java?</h3>
+                    <input type="radio" id="answer-2"  name="ans-2" value="respuesta-1" checked="checked">Es un lenguaje que maneja el diseño y presentación de las páginas web.<br>
+                    <input type="radio" id="answer-2"  name="ans-2" value="respuesta-2" checked="checked">Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.<br>
+                    <input type="radio" id="answer-12" name="ans-2" value="respuesta-13" checked="checked">Java es un lenguaje multiplataforma, orientado a objetos y centrado en la red que se puede utilizar como una plataforma en sí mismo.<br>
+            </div>
+
+            
+            <div class="question">
+                <h3>¿Qué es MaríaDB?</h3>
+                    <input type="radio" id="answer-13" name="ans-3" value="respuesta-11" checked="checked">MariaDB es un sistema de gestión de bases de datos de código abierto
+                    que se utiliza como alternativa a MySQL.<br>
+                    <input type="radio" id="answer-3"  name="ans-3" value="respuesta-2" checked="checked">Es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora.<br>
+                    <input type="radio" id="answer-3"  name="ans-3" value="respuesta-3" checked="checked">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.<br>
+            </div>
+        </form>
+    </div>
+
+    <p class="p-result" id="Answer1"></p>
+    <p class="p-result" id="Answer2"></p>
+    <p class="p-result" id="Answer3"></p>
+
+    <button onclick="ValidarRespuestas()">Validar respuestas</button>
+    <input type="submit" value="enviar">
+
+</body>
+</html>

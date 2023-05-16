@@ -9,7 +9,7 @@
     <title>Formulario de preguntas</title>
 </head>
 <body>
-    
+
     <div class="title">
     <h1>Preguntas de selección múltiple</h1>
     </div>
@@ -27,7 +27,7 @@
             <div class="question">
                 <h3>¿Qué es programación estructurada?</h3>
                     <input type="radio" id="answer-1"  name="ans-1" value="respuesta-1" checked="checked">Es el proceso de crear un conjunto de instrucciones que le dicen a una computadora como realizar algún tipo de tarea.<br>
-                    <input type="radio" id="answer-11" name="ans-1" value="respuesta-12" checked="checked"> La prograEstructEs un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora.<br>
+                    <input type="radio" id="answer-11" name="ans-1" value="respuesta-12" checked="checked"> <span>La prograEstructEs un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora.</span> <br>
                     <input type="radio" id="answer-1"  name="ans-1" value="respuesta-3" checked="checked"> Son las partes físicas, tangibles, de un sistema informático, sus componentes eléctricos, electrónicos y electromecánicos.<br>
             </div>
 
@@ -46,7 +46,36 @@
                     <input type="radio" id="answer-3"  name="ans-3" value="respuesta-2" checked="checked">Es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora.<br>
                     <input type="radio" id="answer-3"  name="ans-3" value="respuesta-3" checked="checked">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.<br>
             </div>
+
+            <div class="question">
+                <h3>¿Qué es NativeScript?</h3>
+                    <input type="radio" id="answer-13" name="ans-4" value="respuesta-1" checked="checked">Es un sistema de gestión de bases de datos de código abierto
+                    que se utiliza como alternativa a MySQL.<br>
+                    <input type="radio" id="answer-3"  name="ans-4" value="respuesta-12" checked="checked">NativeScript es un interesante framework que nos posibilita desarrollar aplicaciones para instalar en sistemas iOS y Android partiendo de un mismo código.<br>
+                    <input type="radio" id="answer-3"  name="ans-4" value="respuesta-3" checked="checked">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.<br>
+            </div>
+
+            <div class="question">
+                <h3>¿Qué es una API en desarrollo de Software?</h3>
+                    <input type="radio" id="answer-13" name="ans-5" value="respuesta-1" checked="checked">Es un sistema de gestión de bases de datos de código abierto
+                    que se utiliza como alternativa a MySQL.<br>
+                    <input type="radio" id="answer-3"  name="ans-5" value="respuesta-2" checked="checked">Es un interesante framework que nos posibilita desarrollar aplicaciones para instalar en sistemas iOS y Android partiendo de un mismo código.<br>
+                    <input type="radio" id="answer-3"  name="ans-5" value="respuesta-13" checked="checked"> API es el código que determina el funcionamiento de un programa informático que sirve para canalizar información de una parte de un software a otra.<br>
+            </div>
+
+            <div class="question">
+                <h3>¿Qué es un API Rest?</h3>
+                    <input type="radio" id="answer-13" name="ans-6" value="respuesta-1" checked="checked">Es un sistema de gestión de bases de datos de código abierto
+                    que se utiliza como alternativa a MySQL.<br>
+                    <input type="radio" id="answer-3"  name="ans-6" value="respuesta-12" checked="checked"> API Rest (Application Programming Interface) es un conjunto de reglas y protocolos que permite la comunicación y el intercambio de datos entre diferentes sistemas informáticos.<br>
+                    <input type="radio" id="answer-3"  name="ans-6" value="respuesta-3" checked="checked"> API es el código que determina el funcionamiento de un programa informático que sirve para canalizar información de una parte de un software a otra.<br>
+            </div>
+
         </form>
+    </div>
+
+    <div id="respuestas-correctas" class="respuestas-correctas">
+
     </div>
 
     <p class="p-result" id="Answer1"></p>
@@ -54,7 +83,8 @@
     <p class="p-result" id="Answer3"></p>
 
     <button onclick="ValidarRespuestas()">Validar respuestas</button>
-    <input type="submit" value="enviar">
+    <button onclick="MostrarRespuestas()">Mostrar respuestas</button>
+    
 
 </body>
 </html>

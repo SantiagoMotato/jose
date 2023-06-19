@@ -13,5 +13,5 @@ function cargarDato(){
        r3=localStorage.getItem("p3")   
       document.getElementById("res3").innerHTML = r3
 }
-    //llamar a la funcion para que se ejecute apenas redirecciona a respuesta.hml
+    //llamar a la funcion para que se ejecute apenas redirecciona a respuesta.html
     cargarDato()

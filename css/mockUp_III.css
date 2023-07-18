@@ -1,0 +1,36 @@
+table{
+    border: 1px solid rgb(64,64,64.8);
+    border-collapse: collapse;
+    width: 35em;
+    margin: auto;
+    margin-top: 60px;
+}
+.title{
+    text-align: center;
+    background-color: rgb(0, 231, 0);
+    padding: 15px;
+}
+td, tr{
+  /*   border: 1px solid rgb(64,64,64.8);
+    width: 200px; */
+    padding: 15px;
+    width: 100px;
+    text-align: left;
+}
+.info{
+    background-color: rgb(0, 231, 0);
+}
+.main-container-img{
+    display: flex;
+    justify-content:center ;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+}

@@ -13,12 +13,14 @@
     <div class="main-content">
         <div class="box">
             <h1>Inicio de sesión</h1>
-            <input class="user-input" type="text" placeholder="Ingrese su usuario" id="usuario">
-            <input class="user-password" type="number" placeholder="Ingrese su clave">
-
+            <input class="user-input" type="text" placeholder="Ingrese su usuario" id="user">
+            <input class="user-password" maxlength="15" type="number" placeholder="Ingrese su clave" id="pass">
             <p>
-            <button onclick="ingresar()" class="sign_in-btn">Ingresar</button>
+            <button onclick="validarUsuario()" class="sign_in-btn">Ingresar</button>
             </p>
+            <div>
+                <h1 id="error"></h1>
+            </div>
         
           <a class="sign_up-link" href="sistemasDeVentas_II.html">Registrarse</a>
         </div>

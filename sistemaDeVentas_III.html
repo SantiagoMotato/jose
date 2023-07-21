@@ -13,32 +13,39 @@
     <div class="main-content">
         <div class="box">
             <div class="headlight">
-                <h1>Bienvenido <b id="nombreUsuario"></b> </h1>
+                <h1>Bienvenido<span id="nameUser"></span></h1>
                 <h2>Venta de equipos móviles</h2>
             </div>
             <div class="img-container">
                 <div class="img-title">
                     <h3>Tesla</h3>
                     <div class="img-1"></div>
-                    <p>$4'000.000</p>
-                    <input type="number" placeholder="Cantidad">
+                    <p>$<span id="pTesla">4000000</span></p>
+                    <input type="number" placeholder="Cantidad" maxlength="3" id="tesla">
                 </div>
                 <div class="img-title">
                     <h3>Iphone</h3>
                     <div class="img-2"></div>
-                    <p>$3'700.000</p>
-                    <input type="number" placeholder="Cantidad">
+                    <p id="pIphone">3700000</p>
+                    <input type="number" placeholder="Cantidad" maxlength="3"  id="iphone">
                 </div>
                 <div class="img-title">
                     <h3>Samsung S23 Ultra</h3>
                     <div class="img-3"></div>
-                    <p>$5'800.000</p>
-                    <input type="number" placeholder="Cantidad">
+                    <p id="pSam">$5800000</p>
+                    <input type="number" placeholder="Cantidad" id="samsung">
                 </div>
             </div>
 
-            <button class="sell-btn">Vender</button>
-            <button class="log_out-btn">Salir</button>
+            <button onclick="vender()" class="sell-btn">Vender</button>
+            <button onclick="salir()" class="log_out-btn">Salir</button>
+        </div>
+
+        <div id="informe">
+            <p id="ventaTesla"></p>
+            <p id="ventaIphone"></p>
+            <p id="ventaSamsung"></p>
+            <p id="masVendido"></p>
         </div>
     </div>
 

@@ -162,3 +162,15 @@ input{
     background-color: rgb(180, 180, 175);
     padding: 0px 20px 0px 20px;
 }
+#ventaTesla,
+#ventaIphone,
+#ventaSamsung,
+#masVendido{
+  margin-bottom: 10px;
+  text-align: center;
+  color: black;
+}  
+
+.img-title span{
+    font-weight: bold;
+  }

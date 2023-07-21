@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sistemaDeVentas_II.css">
+    <script defer src="js/sistemaDeVentas_II.js"></script>
     <title>Registro de usuario</title>
 </head>
 <body>
@@ -12,10 +13,11 @@
     <div class="main-content">
         <div class="box">
             <h1>Registro de usuario</h1>
-            <input class="user-input" type="text" placeholder="Ingrese su usuario">
-            <input class="user-password" type="text" placeholder="Ingrese su clave">
-            <input class="sign_up-date" type="date" >
-            <button class="sign_up-btn">Registrar</button>
+            <input class="user-input" type="text" placeholder="Ingrese su usuario" maxlength="25" id="user">
+            <input class="user-password" type="password" placeholder="Ingrese su clave" maxlength="15" id="pass">
+            <input class="sign_up-date" type="date" id="date">
+            <p id="error"></p>
+            <button onclick="guardar()" class="sign_up-btn" id="registrar">Registrar</button>
         </div>
     </div>
 

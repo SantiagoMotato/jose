@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe</title>
+    <script defer src="js/sistemaDeVentas_IV.js"></script>
+    <link rel="stylesheet" href="css/sistemaDeVentas_IV.css">
+</head>
+<body>
+    <div id="informe">
+        <div class="titulo">
+            <button onclick="regresar()">Regresar</button>
+            <h1>Informe</h1>
+            <button onclick="salir()">Cerrar Sesiòn</button>
+        </div>
+        <div class="totales">
+            <div class="listaTotales title">
+                <p class="nombre">Equipo</p>
+                <p class="cantidad">Cantidad Vendidos</p>
+                <p class="valor">Valor Total Ventas</p>
+            </div>
+            <div class="listaTotales">
+                <p class="nombre">Samsung</p>
+                <p id="cantidadTotalVendidosSamsung" class="cantidad"></p>
+                <p id="ventasTotalesSamsung" class="valor"></p>
+            </div>
+            <div class="listaTotales">
+                <p class="nombre">Motorola</p>
+                <p id="cantidadTotalVendidosMotorola" class="cantidad"></p>
+                <p id="ventasTotalesMotorola"></p>
+            </div>
+            <div class="listaTotales">
+                <p class="nombre">Huawei</p>
+                <p id="cantidadTotalVendidosHuawei" class="cantidad"></p>
+                <p id="ventasTotalesHuawei" class="valor"></p>
+            </div>
+            <div class="listaTotales">
+                <p>Totales</p>
+                <p id="cantidadTotalVendidos"></p>
+                <p id="cantidadTotalVenta" class="valor"></p>
+            </div>
+        </div>
+        <div class="masVendido">
+            <p>El celular más vendido es:</p>
+            <p id="masVendido"></p>
+        </div>
+        <div class="lista" id="lista">
+            <div class='ventas title'>
+                <p class="ventaNum title">Ventas Nº</p>
+                <p class="equipoS title">Samsung</p>
+                <p class="valorS title">Valor</p>
+                <p class="equipoM title">Motorola</p>
+                <p class="valorM title">Valor</p>
+                <p class="equipoH title">Huawei</p>
+                <p class="valorH title">Valor</p>
+                <p class="totalventa title">Total Venta</p>
+            </div>
+        </div>
+    </div>
+    <div class="totalLista title">
+        <p class="texto">Total Ventas</p>
+        <p class="totalVentas"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#informe{
+    width: 100%;
+    display: grid;
+    grid-template: "titulo titulo titulo" 10vh
+                    "totales totales masVendido" 50vh
+                    "lista lista lista" 35vh /
+                    4fr 4fr 6fr
+}
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #007bff;
+    color: white;
+}
+
+button{
+    margin: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.totales{
+    grid-area: totales;
+}
+
+.listaTotales{
+    display: grid;
+    grid-template: "nombre cantidad valor" 10vh /
+                    2fr 1fr 3fr;
+    align-items: center;
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+.cantidad{
+    grid-area: cantidad;
+}
+
+.valor{
+    grid-area: valor;
+}
+
+.masVendido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: masVendido;
+    background-color: #f9f9f9;
+}
+
+#masVendido{
+    font-size: 3.5em;
+}
+
+.lista{
+    grid-area: lista;
+    overflow: scroll;
+}
+
+.ventas{
+    display: grid;
+    align-items: center;
+    grid-template: "ventaNum equipoS valorS equipoM valorM equipoH valorH totalVenta" 40px /
+                    1fr 2fr 3fr 2fr 3fr 2fr 3fr 4fr;
+    background-color: #f9f9f9;
+}
+
+.totalLista{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template: "texto totalVentas" 4vh /
+                    16fr 4fr;
+    background-color: #f9f9f9;
+}
+
+.texto{
+    text-align: right;
+}
+
+.ventas p{
+    border-right: 1px dashed black;
+    background-color: #f5f5f5;
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+}
+
+.ventas .title{
+    background-color: #706f6f;
+    border: none;
+}
+
+.title{
+    background-color: #706f6f;
+    color: whitesmoke;
+    font-weight: bold;
+    
+}

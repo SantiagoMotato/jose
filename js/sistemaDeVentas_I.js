@@ -1,6 +1,34 @@
-function ingresar(){
-    let usuario1 = document.getElementById("usuario").value
+function validarUsuario(){
+    let usuarioIngresado = document.getElementById("user").value
+    let passwordIngresada = document.getElementById("pass").value
 
-    localStorage.setItem("usuario", usuario1)
-    window.location="sistemaDeVentas_III.html"
+    let users = JSON.parse(localStorage.getItem("users"))
+    let passwords = JSON.parse(localStorage.getItem("pass"))
+
+    let usuarioActivo
+
+    if (localStorage.getItem("sesion") === null) {
+        let sesion = false
+        localStorage.setItem("sesion",sesion)
+    }
+
+    if ((JSON.parse(localStorage.getItem("users")) !== null) && JSON.parse(localStorage.getItem("pass") !== null)){
+        let sesion
+        for (let i = 0; i < users.length; i++) {
+            if ((usuarioIngresado == users[i]) && (passwordIngresada == passwords[i])){
+                sesion = true;
+                usuarioActivo = usuarioIngresado
+                localStorage.setItem("usuarioActivo",usuarioActivo)
+                localStorage.setItem("sesion", sesion)
+                break
+            }
+        }
+        if (sesion){
+            window.location="sistemaDeVentas_III.html";
+        }else{
+            document.getElementById("error").innerHTML = "Las credenciales no coinciden, o no se encuentra registrado, Intentelo de nuevo"
+        }
+    }else{
+        document.getElementById("error").innerHTML = "Las credenciales no coinciden, o no se encuentra registrado, Intentelo de nuevo"
+    }
 }

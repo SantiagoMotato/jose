@@ -16,7 +16,7 @@ function salir(){
 }
 
 let usuarioActivo = localStorage.getItem("usuarioActivo")
-document.getElementById("nameUser").innerHTML = usuarioActivo
+document.getElementById("nameUser").innerHTML = usuarioActivo;
 
 function vender(){
     let ventasTesla = [];
@@ -68,15 +68,15 @@ function vender(){
     }
 
     if (canTesla > 0) {
-        document.getElementById("ventaTesla").innerHTML = "Se han vendido "+canTesla+" celulares Samsung por un valor de $"+ventaTesla 
+        document.getElementById("ventaTesla").innerHTML = "Números de ventas "+canTesla+" del teléfono Tesla por valor de $"+ventaTesla 
     }
 
     if (canIphone > 0) {
-        document.getElementById("ventaIphone").innerHTML = "Se han vendido "+canIphone+" celulares Motorola por un valor de $"+ventaIphone
+        document.getElementById("ventaIphone").innerHTML = "Números de ventas "+canIphone+" del teléfono Iphone por valor de $"+ventaIphone
     }
 
     if (canSamsung > 0) {
-        document.getElementById("ventaSamsung").innerHTML = "Se han vendido "+canSamsung+" celulares Huawei por un valor de $"+ventaSamsung
+        document.getElementById("ventaSamsung").innerHTML = "Números de ventas "+canSamsung+" del teléfono Samsung S23 Ultra por valor de $"+ventaSamsung
     }
 
     if (JSON.parse(localStorage.getItem("ventasTesla")) === null) {

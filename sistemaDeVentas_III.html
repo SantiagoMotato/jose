@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sistemaDeVentas_III.css">
-    <script src="js/sistemaDeVentas_III.js"></script>
+    <script defer src="js/sistemaDeVentas_III.js"></script>
     <title>Reporte de ventas</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="main-content">
         <div class="box">
             <div class="headlight">
-                <h1>Bienvenido<span id="nameUser"></span></h1>
+                <h1>Bienvenido  <span id="nameUser"></span></h1>
                 <h2>Venta de equipos móviles</h2>
             </div>
             <div class="img-container">
@@ -26,27 +26,31 @@
                 <div class="img-title">
                     <h3>Iphone</h3>
                     <div class="img-2"></div>
-                    <p id="pIphone">3700000</p>
+                    <p>$<span id="pIphone">3700000</span></p>
                     <input type="number" placeholder="Cantidad" maxlength="3"  id="iphone">
                 </div>
                 <div class="img-title">
                     <h3>Samsung S23 Ultra</h3>
                     <div class="img-3"></div>
-                    <p id="pSam">$5800000</p>
+                    <p>$<span id="pSam">5800000</span></p>
+                    <!-- <p id="pSam">$5800000</p> -->
                     <input type="number" placeholder="Cantidad" id="samsung">
                 </div>
             </div>
 
             <button onclick="vender()" class="sell-btn">Vender</button>
+            <button onclick="informar()" class="info-btn">Informe</button>
             <button onclick="salir()" class="log_out-btn">Salir</button>
+
+            <div class="sales" id="informe">
+                <p class="phones_info" id="ventaTesla"></p>
+                <p class="phones_info" id="ventaIphone"></p>
+                <p class="phones_info" id="ventaSamsung"></p>
+                <p class="phones_info" id="masVendido"></p>
+            </div>
         </div>
 
-        <div id="informe">
-            <p id="ventaTesla"></p>
-            <p id="ventaIphone"></p>
-            <p id="ventaSamsung"></p>
-            <p id="masVendido"></p>
-        </div>
+       
     </div>
 
 </body>

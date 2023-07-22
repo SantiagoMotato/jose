@@ -9,7 +9,7 @@
 }
 .box{
     width: 1200px;
-    height: 900px;
+    height: 1120px;
     background-color: brown;
     border-radius: 20px;
     margin: 80px;
@@ -126,6 +126,7 @@ input{
     color: white;
     background-color: black;
     padding: 0px 20px 0px 20px;
+    transition: 1s;
 }
 .sell-btn:hover{
     position: relative;
@@ -149,11 +150,37 @@ input{
     color: white;
     background-color: black;
     padding: 0px 20px 0px 20px;
+    transition: 1s;
 }
 .log_out-btn:hover{
     display: block;
     position: relative;
     left: 550px;
+    margin-top: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(7, 7, 7);
+    background-color: rgb(180, 180, 175);
+    padding: 0px 20px 0px 20px;
+}
+.info-btn{
+    display: block;
+    position: relative;
+    left: 530px;
+    margin-top: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    padding: 0px 20px 0px 20px;
+    transition: 1s;
+}
+.info-btn:hover{
+    display: block;
+    position: relative;
+    left: 530px;
     margin-top: 50px;
     font-size: 30px;
     border: none;
@@ -173,4 +200,15 @@ input{
 
 .img-title span{
     font-weight: bold;
-  }
+}
+/* .sales{
+    width: 1200px;
+    height: 3cqmin;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 80px;
+} */
+.phones_info{
+    font-size: 20px;
+
+}

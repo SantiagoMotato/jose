@@ -29,7 +29,7 @@ if(sesion == 'false'){
 function salir(){
     sesion = false
     localStorage.setItem("sesion", sesion)
-    window.location = "index.html"
+    window.location = "sistemaDeVentas.html"
 }
 
 if (localStorage.getItem("sesion") === null) {
@@ -66,5 +66,5 @@ function rellenarLista(){
 rellenarLista();
 
 function regresar(){
-    window.location = "tienda.html"
+    window.location = "sistemaDeVentas_III.html"
 }

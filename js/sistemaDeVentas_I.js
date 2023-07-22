@@ -26,9 +26,9 @@ function validarUsuario(){
         if (sesion){
             window.location="sistemaDeVentas_III.html";
         }else{
-            document.getElementById("error").innerHTML = "Las credenciales no coinciden, o no se encuentra registrado, Intentelo de nuevo"
+            document.getElementById("error").innerHTML = "Datos digitados no válidos. Por favor, verifiquelos o quizás no esté registrado. Intente nuevamente."
         }
     }else{
-        document.getElementById("error").innerHTML = "Las credenciales no coinciden, o no se encuentra registrado, Intentelo de nuevo"
+        document.getElementById("error").innerHTML = "Datos digitados no válidos. Por favor, verifiquelos o quizás no esté registrado. Intente nuevamente."
     }
 }

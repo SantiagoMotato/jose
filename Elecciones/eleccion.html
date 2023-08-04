@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script defer src="eleccion.js"></script> -->
+    <title>elecciones</title>
+</head>
+<body>
+
+
+     <!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Votación</title>
+</head>
+<body>
+  <h2>Elige tu candidato:</h2>
+  <form id="votingForm">
+    <label>
+      <input type="radio" name="candidato" value="1"> Sergio Mauricio
+    </label><br>
+    <label>
+      <input type="radio" name="candidato" value="2"> Yider Luna
+    </label><br>
+    <label>
+      <input type="radio" name="candidato" value="3"> Frank Alexander
+    </label><br>
+    <label>
+      <input type="radio" name="candidato" value="0"> Voto en blanco
+    </label><br>
+    <button type="submit">Votar</button>
+  </form>
+
+  <div id="results">
+    <h3>Resultados:</h3>
+    <p>Sergio Mauricio: <span id="candidato1Votes">0</span> votos</p>
+    <p>Yider Luna: <span id="candidato2Votes">0</span> votos</p>
+    <p>Frank Alexander: <span id="candidato3Votes">0</span> votos</p>
+    <p>Votos en blanco: <span id="votosEnBlanco">0</span></p>
+    <p>Ganador: <span id="ganador">Sin resultados</span></p>
+  </div>
+
+  <script>
+    document.getElementById("votingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const selectedCandidate = document.querySelector('input[name="candidato"]:checked');
+
+      if (selectedCandidate) {
+        let candidato1Votes = parseInt(localStorage.getItem("candidato1Votes")) || 0;
+        let candidato2Votes = parseInt(localStorage.getItem("candidato2Votes")) || 0;
+        let candidato3Votes = parseInt(localStorage.getItem("candidato3Votes")) || 0;
+        let votosEnBlanco = parseInt(localStorage.getItem("votosEnBlanco")) || 0;
+
+        if (selectedCandidate.value === "1") {
+          candidato1Votes++;
+        } else if (selectedCandidate.value === "2") {
+          candidato2Votes++;
+        } else if (selectedCandidate.value === "3") {
+          candidato3Votes++;
+        } else if (selectedCandidate.value === "0") {
+          votosEnBlanco++;
+        }
+
+        localStorage.setItem("candidato1Votes", candidato1Votes);
+        localStorage.setItem("candidato2Votes", candidato2Votes);
+        localStorage.setItem("candidato3Votes", candidato3Votes);
+        localStorage.setItem("votosEnBlanco", votosEnBlanco);
+
+        document.getElementById("candidato1Votes").textContent = candidato1Votes;
+        document.getElementById("candidato2Votes").textContent = candidato2Votes;
+        document.getElementById("candidato3Votes").textContent = candidato3Votes;
+        document.getElementById("votosEnBlanco").textContent = votosEnBlanco;
+
+        let ganador = "Sin resultados";
+        if (candidato1Votes >= candidato2Votes && candidato1Votes >= candidato3Votes && candidato1Votes >= votosEnBlanco) {
+          ganador = "Sergio Mauricio";
+        } else if (candidato2Votes >= candidato1Votes && candidato2Votes >= candidato3Votes && candidato2Votes >= votosEnBlanco) {
+          ganador = "Yider Luna";
+        } else if (candidato3Votes >= candidato1Votes && candidato3Votes >= candidato2Votes && candidato3Votes >= votosEnBlanco) {
+          ganador = "Frank Alexander";
+        } else if (votosEnBlanco >= candidato1Votes && votosEnBlanco >= candidato2Votes && votosEnBlanco >= candidato3Votes) {
+          ganador = "Votos en blanco";
+        }
+
+        document.getElementById("ganador").textContent = ganador;
+      } else {
+        alert("Por favor, selecciona un candidato o voto en blanco.");
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("candidato1Votes").textContent = localStorage.getItem("candidato1Votes") || 0;
+      document.getElementById("candidato2Votes").textContent = localStorage.getItem("candidato2Votes") || 0;
+      document.getElementById("candidato3Votes").textContent = localStorage.getItem("candidato3Votes") || 0;
+      document.getElementById("votosEnBlanco").textContent = localStorage.getItem("votosEnBlanco") || 0;
+    });
+  </script>
+</body>
+</html>
+
+
+
+</body>
+</html>
+
+  
+

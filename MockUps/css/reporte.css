@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    margin-left: 30px;
+}
+nav{
+    width: 100%;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+/* .second-container{
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+} */
+.menu-container{
+    width: 250px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgreen;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+}
+.tabla-reportes{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.reporte-table-container{
+    margin-top: 30px;
+}
+span{
+    margin-left: 60px;
+    font-weight: 600;
+}
+button{
+    margin-top: 20px;
+    padding: 7px;
+    background-color: rgb(0, 231, 0);
+    border: none;
+    border-radius: 5px; 
+}
+.formulario-contenedor{
+    margin-top: 30px;
+}
+.generarReporte-btn{
+    position: relative;
+    right: -200px;
+    top: 10px;
+}

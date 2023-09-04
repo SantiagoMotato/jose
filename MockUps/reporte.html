@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reporte.css">
+    <title>Reportes</title>
+</head>
+<body>
+
+<nav>
+    <p>www.Agrovida.com</p>
+</nav>
+<div class="main-container">
+
+    <div class="second-container">
+            
+    </div>
+
+    <div class="third-container">
+        <h1>Modulo reporte</h1>
+        <button>Atras</button>
+        <div class="menu-container">
+            <input type="radio" name="option" value="option-1">Inicio<br>
+            <input type="radio" name="option" value="option-2">Herramienta<br>
+            <input type="radio" name="option" value="option-3">Usuario<br>
+            <input type="radio" name="option" value="option-4">Reporte<br>
+        </div>
+    </div>
+
+    <div class="tabla-reportes">
+        <div class="reporte-table-container">
+            <h3>Reportes</h3>
+            <tr><span>ID</span></tr>
+            <tr><span>Usuarios</span></tr>
+            <tr><span>Fecha</span></tr>
+            <tr><span>Tipo de reporte</span></tr><br>
+
+            <tr><span>1</span></tr>
+            <tr><span>Juan Pérez</span></tr>
+            <tr><input type="date"></tr>
+            <tr><span>Observaciones</span></tr>
+
+            <tr><span>2</span></tr>
+            <tr><span>Maria Gonzales</span></tr>
+            <tr><input type="date"></tr>
+            <tr><span>Reporte de herramienta</span></tr>
+        </div>
+
+        <button>Nuevo reporte</button>
+
+        <div class="formulario-contenedor">
+            <tr>
+                <td>Tipo de reporte:</td>
+                <td><select name="" id="">
+                    <option value="">Observaciones</option>
+                </select></td> <br>
+
+                <td>Tipo de herramienta:</td>
+                <td><select name="" id="">
+                    <option value="">Herramienta basica</option>
+                </select></td> <br>
+
+                <td>Categoria:</td>
+                <td><input type="text" placeholder="Ingrese categoria"></td> <br>
+
+                <td>Codigo de la herramienta:</td>
+                <td><input type="text" placeholder="Ingrese codigo"></td> <br>
+            
+                <td>Nombre de la herramienta:</td>
+                <td><input type="text" placeholder="Ingrese nombre de herramienta"></td> <br>
+
+                <td>Descripcion del reporte:</td>
+                <td><input type="text" placeholder="Ingrese descripcion"></td> <br>
+            </tr>
+            <button class="generarReporte-btn">Generar reporte</button>
+        </div>
+    </div>
+
+</div>    
+
+</body>
+</html>

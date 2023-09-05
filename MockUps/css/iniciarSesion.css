@@ -57,6 +57,17 @@ input[type="text"]:focus{
     outline: none;
     color: rgb(36, 59, 34);
 }
+input[type="password"]{
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(23, 156, 23, 0.3);
+    font-size: 1.1em;
+    border-bottom: 3px solid rgb(48, 87, 50);
+}
+input[type="password"]:focus{
+    outline: none;
+    color: rgb(36, 59, 34);
+}
 .password{
     margin-top: 20px;
     margin-bottom: 5px;
@@ -87,7 +98,7 @@ input[type="text"]:focus{
 }
 .forgotten-password{
     display: block;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 150px;
     color: blue;
     text-decoration: none;
@@ -95,7 +106,7 @@ input[type="text"]:focus{
 }
 .forgotten-password:hover{
     display: block;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 150px;
     color: rgb(238, 43, 43);
     transform: scale(1.1);

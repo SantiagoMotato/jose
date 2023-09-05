@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mantenimiento.css">
-    <title>Mantenimientos</title>
+    <title>Registrar mantenimientos</title>
 </head>
 <body>
 
-    <table>
+   <!--  <table>
         <tr>
             <th class="title" colspan="2">Registro de mantenimientos</th>
         </tr>
@@ -37,7 +37,61 @@
             <td class="info">Fecha de mantenimiento:</td>
             <td class="td-5"><input type="date"></td>
         </tr>
-    </table>
+    </table> -->
+
+    <div class="h1-container">
+        <h1>Registro de herramientas</h1>
+    </div>
+
+    <button class="atras-btn">Atrás</button>
+
+<div class="main-container">
+    <div class="second-container">
+        <form action="">
+            <div>
+                <label for="">Código de la herramienta:</label>
+                <input type="number" placeholder="Ingrese codigo" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Nombre de la herramienta:</label>
+                <input type="text" placeholder="Ingrese herramienta" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Tipo de herramienta:</label>
+                <select name="" id="">
+                    <option value="">Herramienta básica</option>
+                    <option value="">Maquinaria</option>
+                    <option value="">Laboratorio</option>
+                    <option value="">Desmembramiento</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Categoria:</label>
+                <select name="" id="">
+                    <option value="">RR</option>
+                    <option value="">RR</option>
+                    <option value="">RR</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Cantidad:</label>
+                <input type="number" placeholder="Ingrese telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Fecha de revision:</label>
+                <input type="date" placeholder="Ingrese fecha" required>
+            </div>
+        </form>
+
+        <button>Registrar <br> herramienta</button>
+
+    </div>  
+</div>
     
 </body>
 </html>
